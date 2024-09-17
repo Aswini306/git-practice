@@ -1,3 +1,4 @@
+#!/bin/bash
 $person1 = ramesh
 $person2= suresh
 
