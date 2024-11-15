@@ -1,9 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
-R = \e31m
-G = \e32m
-N = \e0m
+R = "\e31m"
+G = "\e32m"
+N = "\e0m"
 
 CHECK_ROOT(){
     if [ $USERID -ne 0 ]
@@ -16,10 +16,10 @@ CHECK_ROOT(){
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "$2 is... $R FAILED $N "
+        echo -e "$2 is... $R FAILED $N "
         exit 1
     else
-        echo "$2 is... $G SUCCESS $N"
+        echo -e "$2 is... $G SUCCESS $N"
     fi
 }
 
