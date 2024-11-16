@@ -30,7 +30,7 @@ dnf list installed gitzz
 if [ $? -ne 0 ]
 then
     echo "Git is not installed, going to install it.."
-    dnf install git -y
+    dnf install gitxx -y
     VALIDATE $? "Installing Git"
 else
     echo "Git is already installed, nothing to do.."
