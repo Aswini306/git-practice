@@ -25,7 +25,7 @@ VALIDATE(){
 
 CHECK_ROOT
 
-dnf list installed git
+dnf list installed gitzz
 
 if [ $? -ne 0 ]
 then
